@@ -1,0 +1,105 @@
+.ant-modal-footer{
+    display: none !important;
+}
+
+.ant-modal-content > button {
+    display:none;
+}
+
+.modal{
+    width: 100%;
+    height: 100vh;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0,0,0, 0.5);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    .container{
+        position:relative;
+        background-color: #fff;
+        font-family: 'Poppins', sans-serif;
+        width: 80%;
+        height: 90%;
+        box-shadow: 1px 1px rgba(0,0,0, 0.8);
+        padding: 1em;
+
+        .title{
+            text-align:center;
+            margin-bottom: 25px;
+
+            h1{
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                letter-spacing: 3px;
+            }
+        }
+
+        .content{
+            display:flex;
+            flex-direction: column;
+            gap: 1.2em;
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+
+            &>div{
+                display:flex;
+                justify-content: space-between;
+                
+                span{
+                    font-weight:500;
+                }
+
+                input, select{
+                    width: 50%;
+                    height: 30px;
+                    background-color: #fff;
+                    color: black;
+                    font-weight:500;
+                    border: 1px solid rgba(0,0,0, 0.2);
+                    border-radius: 2px;
+                }
+
+            }
+            
+            .content-buttons{
+                display:flex;
+                justify-content: flex-end;
+                gap: 1em;
+                
+                button{
+                    padding: 0.4em;
+                    border:none;
+                    border-radius: 2px;
+                    
+                    > img {
+                        width:35px;
+                    }
+                 
+                    &:hover{
+                        filter: brightness(95%);
+                    }
+                }
+
+                .btn-confirmar{
+                    background-color:transparent;
+                    
+                }
+
+                .btn-cancelar{
+                    background: transparent;
+                    
+                }
+            }
+        }
+
+    }
+}
+
+.infos-final{
+    display:block;
+}
